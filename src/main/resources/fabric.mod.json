@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "cybergrind",
+  "version": "${version}",
+  "name": "cybergrind",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/snake/cybergrind"
+  },
+  "license": "MIT",
+  "icon": "assets/cybergrind/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.snakefangox.cybergrind.client.CybergrindClient"
+    ],
+    "main": [
+      "net.snakefangox.cybergrind.Cybergrind"
+    ],
+    "fabric-datagen": [
+      "net.snakefangox.cybergrind.datagen.DataGen"
+    ]
+  },
+  "mixins": [
+    "cybergrind.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
